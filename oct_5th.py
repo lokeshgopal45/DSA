@@ -10,14 +10,14 @@ class Solution:
             for i in range(len(skill)):
                 t1,t2 = sorted_skill[i],sorted_skill[len(skill)-1-i]
                 pairs.append(tuple([t1,t2]))
-            '''
-
-          # Looping Haldway 
-
-          
 
             half = int(len(pairs)/2)
-            pairs = pairs[:half] # duplicate pairs will be there 
+            pairs = pairs[:half] # duplicate pairs will be there , this is not needed
+            
+            '''
+
+            # New Approach to find pairs cuttinng down looping 50%, this beats 23%
+            pairs = [(sorted_skill[i], sorted_skill[~i]) for i in range(len(skill) // 2)]
             each_team_skill = sum(pairs[1])
             for i in pairs:
                 if sum(i)!=each_team_skill:
