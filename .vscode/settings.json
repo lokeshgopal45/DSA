@@ -2,5 +2,8 @@
   "github.copilot.enable": {
     "python": false,
     "markdown": false
+  },
+  "[jupyter]": {
+    "github.copilot.enable": false
   }
 }
