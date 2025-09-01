@@ -1,9 +1,2 @@
 /env/
-/archive/
-/.DS_Store
-*.log
-*.tmp
-*.bak
-*.swp
-*.pid
-*.pyc       
+
